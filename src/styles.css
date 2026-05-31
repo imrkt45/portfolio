@@ -1,0 +1,200 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+::selection {
+  color: #061312;
+  background: #5eead4;
+}
+
+a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.page-shell {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  padding: 12px 0;
+  background: rgba(7, 17, 17, 0.86);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.page-shell.light .topbar {
+  background: rgba(247, 250, 249, 0.9);
+  border-bottom-color: rgba(16, 32, 31, 0.12);
+}
+
+.hero {
+  min-height: 82vh;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(5, 14, 14, 0.95) 0%, rgba(5, 14, 14, 0.78) 46%, rgba(5, 14, 14, 0.2) 100%),
+    url('/assets/hero-workstation.png') center right / cover no-repeat;
+}
+
+.page-shell.light .hero {
+  background:
+    linear-gradient(90deg, rgba(247, 250, 249, 0.97) 0%, rgba(247, 250, 249, 0.9) 48%, rgba(247, 250, 249, 0.34) 100%),
+    url('/assets/hero-workstation.png') center right / cover no-repeat;
+}
+
+.hero-inner {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.hero-copy {
+  padding: 18px 0;
+}
+
+.hero-title {
+  max-width: 650px;
+}
+
+.hero-chip {
+  width: fit-content;
+  background: rgba(20, 184, 166, 0.12);
+  border: 1px solid rgba(20, 184, 166, 0.28);
+}
+
+.section {
+  padding: 64px 0 0;
+}
+
+.compact-section {
+  padding-top: 52px;
+}
+
+.section-heading {
+  max-width: 720px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: -36px;
+  position: relative;
+  z-index: 2;
+}
+
+.stat-tile {
+  padding: 20px;
+  border: 1px solid rgba(127, 148, 145, 0.18);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+.skill-grid,
+.capability-grid,
+.project-grid,
+.split-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.capability-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.capability-card {
+  min-height: 220px;
+  background-image: linear-gradient(180deg, rgba(20, 184, 166, 0.08), transparent 58%);
+}
+
+.project-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-card {
+  min-height: 260px;
+  cursor: pointer;
+  background-image: linear-gradient(135deg, rgba(20, 184, 166, 0.08), transparent 42%);
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: #14b8a6;
+  box-shadow: 0 18px 48px rgba(20, 184, 166, 0.16);
+}
+
+.timeline-card {
+  border-left: 3px solid #14b8a6;
+}
+
+.clean-list {
+  margin: 16px 0 0;
+  padding-left: 20px;
+}
+
+.MuiCard-root {
+  border-color: rgba(127, 148, 145, 0.2);
+}
+
+.MuiCardContent-root {
+  padding: 24px;
+}
+
+.MuiCardContent-root:last-child {
+  padding-bottom: 24px;
+}
+
+.project-drawer {
+  width: min(460px, 100vw);
+}
+
+@media (max-width: 960px) {
+  .stats-grid,
+  .capability-grid,
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .hero {
+    min-height: 78vh;
+    background:
+      linear-gradient(180deg, rgba(5, 14, 14, 0.96) 0%, rgba(5, 14, 14, 0.84) 58%, rgba(5, 14, 14, 0.62) 100%),
+      url('/assets/hero-workstation.png') center / cover no-repeat;
+  }
+
+  .page-shell.light .hero {
+    background:
+      linear-gradient(180deg, rgba(247, 250, 249, 0.98) 0%, rgba(247, 250, 249, 0.92) 62%, rgba(247, 250, 249, 0.7) 100%),
+      url('/assets/hero-workstation.png') center / cover no-repeat;
+  }
+
+  .stats-grid,
+  .skill-grid,
+  .capability-grid,
+  .project-grid,
+  .split-section {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding-top: 48px;
+  }
+
+  .hero-inner {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
