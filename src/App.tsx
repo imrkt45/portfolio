@@ -91,7 +91,7 @@ function App() {
           <Box className="hero">
             <Container maxWidth="lg" className="hero-inner">
               <Stack maxWidth={720} gap={2.4} className="hero-copy">
-                <Chip className="hero-chip" label={`${profile.location} | ${profile.role}`} />
+                <Chip className="hero-chip" label={`${profile.location}  •  ${profile.tagline}`} />
                 <Typography variant="h1" className="hero-title">
                   {profile.name}
                 </Typography>
@@ -200,6 +200,20 @@ function App() {
                         </Box>
                         <Chip label={item.period} />
                       </Stack>
+                      {item.metrics && (
+                        <Stack direction="row" flexWrap="wrap" gap={1.5} mt={2.5} className="metric-row">
+                          {item.metrics.map((metric) => (
+                            <Box key={metric.label} className="metric-pill">
+                              <Typography component="span" className="metric-value">
+                                {metric.value}
+                              </Typography>
+                              <Typography component="span" className="metric-label">
+                                {metric.label}
+                              </Typography>
+                            </Box>
+                          ))}
+                        </Stack>
+                      )}
                       <Stack component="ul" gap={1.2} className="clean-list">
                         {item.points.map((point) => (
                           <Typography component="li" color="text.secondary" key={point}>
@@ -308,6 +322,35 @@ function App() {
               </Card>
             </Box>
           </Container>
+
+          <Box component="footer" className="footer">
+            <Container maxWidth="lg">
+              <Stack
+                direction={{ xs: 'column', sm: 'row' }}
+                justifyContent="space-between"
+                alignItems={{ xs: 'flex-start', sm: 'center' }}
+                gap={1.5}
+              >
+                <Typography color="text.secondary">
+                  © {new Date().getFullYear()} {profile.name} — {profile.tagline}
+                </Typography>
+                <Stack direction="row" gap={0.5}>
+                  <IconButton href={profile.github} target="_blank" color="inherit" size="small">
+                    <GitHub fontSize="small" />
+                  </IconButton>
+                  <IconButton href={profile.linkedin} target="_blank" color="inherit" size="small">
+                    <LinkedIn fontSize="small" />
+                  </IconButton>
+                  <IconButton href={profile.leetcode} target="_blank" color="inherit" size="small">
+                    <Code fontSize="small" />
+                  </IconButton>
+                  <IconButton href={`mailto:${profile.email}`} color="inherit" size="small">
+                    <Email fontSize="small" />
+                  </IconButton>
+                </Stack>
+              </Stack>
+            </Container>
+          </Box>
         </Box>
 
         <Drawer
