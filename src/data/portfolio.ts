@@ -13,6 +13,7 @@ export type ExperienceItem = {
   company: string;
   role: string;
   period: string;
+  location: string;
   points: string[];
   metrics?: { value: string; label: string }[];
 };
@@ -21,21 +22,21 @@ export const profile = {
   name: 'Raj Kumar Tiwari',
   role: 'Full Stack Developer',
   tagline: 'Full Stack Developer | AI & LLM Integration',
-  location: 'Noida, India',
+  location: 'Noida, Uttar Pradesh, India',
   phone: '+91 8178223608',
   email: 'info.rajtiwari45@gmail.com',
   github: 'https://github.com/imrkt45',
   linkedin: 'https://www.linkedin.com/in/raj-kumar-tiwari-187441204/',
   leetcode: 'https://leetcode.com/u/imrkt45/',
-  resume: '/Raj-Resume.pdf',
+  resume: '/Raj-Kumar-Tiwari-Resume.pdf',
   summary:
-    'Software Engineer specializing in frontend development with 2+ years building responsive, scalable interfaces using React.js, Redux, Next.js, JavaScript, TypeScript, Angular, and Material UI. Intermediate expertise in Data Structures & Algorithms and C++, with strong data-persistence skills in MongoDB — and a proven track record extending into backend systems (Python, FastAPI, Node.js, Express.js, WebSockets) and AI solutions using RAG, LangChain, and OpenAI.',
+    'Full Stack Developer with 2.5+ years designing and shipping responsive, high-performance web applications using React.js, Next.js, JavaScript, TypeScript, Redux, and Material UI — backed by Node.js, Express.js, and MongoDB. Proven record of turning complex requirements into scalable architecture and measurable performance gains, with hands-on experience in Python, FastAPI, WebSockets, Redis, Docker, and Kafka, and production AI features built with RAG, LangChain, and OpenAI.',
 };
 
 export const stats = [
-  { label: 'Engineering Experience', value: '2+ yrs' },
+  { label: 'Engineering Experience', value: '2.5+ yrs' },
   { label: 'Faster API Response', value: '~40%' },
-  { label: 'Fewer AI Hallucinations', value: '50%' },
+  { label: 'Fewer AI Hallucinations', value: '~50%' },
   { label: 'Featured Projects', value: '5' },
 ];
 
@@ -43,44 +44,44 @@ export const capabilities = [
   {
     title: 'Frontend Engineering',
     description:
-      'Responsive, high-performance React, Next.js, and Angular interfaces with Redux state management, TypeScript, Material UI, and Web Workers for smooth, scalable UX.',
+      'Responsive, high-performance React and Next.js interfaces with Redux, TypeScript, Material UI, HTML5/CSS3, and Web Workers — built for scalability, accessibility, and a consistent user experience.',
   },
   {
     title: 'Full-Stack & Backend',
     description:
-      'Production APIs and server-side logic with Node.js, Express.js, FastAPI, REST, WebSockets, and Kafka — backed by MongoDB, PostgreSQL, Redis caching, and Docker.',
+      'Production REST APIs and server-side logic with Node.js, Express.js, FastAPI, WebSockets, and Kafka — backed by MongoDB, Redis caching, and Docker-based deployments.',
   },
   {
     title: 'AI & LLM Integration',
     description:
-      'OpenAI-powered LLM features, RAG pipelines with LangChain, FAISS vector retrieval, ChatOllama agents, and tool-calling architectures that ground responses in real data.',
+      'OpenAI-powered LLM features and Retrieval-Augmented Generation pipelines with LangChain and FAISS vector retrieval, plus tool-calling agents that ground responses in real data.',
   },
 ];
 
 export const skillGroups = [
   {
     title: 'Frontend',
-    skills: ['React.js', 'Redux', 'Next.js', 'JavaScript', 'TypeScript', 'Angular', 'Material UI'],
+    skills: ['React.js', 'Next.js', 'JavaScript (ES6+)', 'TypeScript', 'Redux', 'Material UI', 'HTML5', 'CSS3', 'Responsive UI'],
   },
   {
     title: 'Backend',
-    skills: ['Python', 'FastAPI', 'Node.js', 'Express.js', 'REST APIs', 'Kafka', 'WebSockets'],
+    skills: ['Node.js', 'Express.js', 'Python', 'FastAPI', 'REST APIs', 'WebSockets', 'Kafka'],
   },
   {
     title: 'Databases',
     skills: ['MongoDB', 'Redis'],
   },
   {
+    title: 'AI & LLM',
+    skills: ['RAG', 'LangChain', 'OpenAI APIs', 'FAISS Vector Database'],
+  },
+  {
     title: 'Cloud & DevOps',
-    skills: ['Git', 'Docker'],
+    skills: ['Docker', 'Git'],
   },
   {
-    title: 'AI & Data',
-    skills: ['RAG', 'LangChain', 'OpenAI', 'FAISS', 'ChatOllama'],
-  },
-  {
-    title: 'Foundations',
-    skills: ['Data Structures', 'Algorithms', 'C++', 'OOP', 'Flutter', 'Dart'],
+    title: 'Core Competencies',
+    skills: ['Data Structures & Algorithms', 'C++', 'Object-Oriented Programming', 'System Design Fundamentals', 'Agile / Scrum'],
   },
 ];
 
@@ -89,131 +90,128 @@ export const experience: ExperienceItem[] = [
     company: 'Sense & Respond Software LLC',
     role: 'Software Engineer',
     period: 'Jan 2024 - Apr 2026',
+    location: 'Noida, India',
     metrics: [
       { value: '~30%', label: 'faster page load' },
       { value: '~40%', label: 'faster API response' },
-      { value: '50%', label: 'fewer AI hallucinations' },
+      { value: '~50%', label: 'fewer AI hallucinations' },
     ],
     points: [
-      'Built responsive, high-performance interfaces with React.js, Redux, TypeScript, JavaScript, and Material UI, focused on scalability and user experience.',
-      'Implemented API integration through Redux for centralized state management, efficient data handling, and optimized application performance.',
-      'Developed foundational backend services — APIs and server-side logic — using Node.js and Express.js with MongoDB integration.',
-      'Developed and integrated OpenAI-powered LLM APIs into full-stack applications, enabling real-time responses and richer user interaction.',
-      'Used Web Workers to handle computationally intensive tasks, improving UI responsiveness and reducing page load time by ~30% while preventing main-thread blocking.',
-      'Implemented Redis caching to reduce database queries, improving API response time by ~40% and enhancing application scalability.',
-      'Built a RAG pipeline using LangChain and OpenAI, reducing AI hallucinations by 50% by grounding responses in retrieved contextual documents.',
+      'Built responsive, high-performance user interfaces with React.js, Redux, TypeScript, JavaScript, and Material UI, prioritizing scalability, accessibility, and a consistent user experience across modules.',
+      'Integrated REST APIs with Redux for centralized state management, streamlining data flow across the application and reducing redundant network calls.',
+      'Implemented Web Workers to offload computationally intensive tasks, improving UI responsiveness and reducing page load time by ~30% by preventing main-thread blocking.',
+      'Introduced Redis caching for frequently accessed data, cutting database queries and improving API response time by ~40% while improving overall application scalability.',
+      'Built a Retrieval-Augmented Generation (RAG) pipeline with LangChain and OpenAI that grounded model responses in retrieved contextual documents, reducing AI hallucinations by ~50%.',
+      'Developed and integrated OpenAI-powered LLM APIs into full-stack applications, enabling intelligent features such as real-time responses and enhanced user interaction.',
+      'Developed server-side logic and REST APIs using Node.js and Express.js with MongoDB integration, supporting end-to-end feature delivery from database to interface.',
+      'Collaborated with product managers, designers, and backend engineers in an Agile environment; participated in code reviews and improved maintainability through reusable, component-based architecture.',
     ],
   },
   {
     company: 'Sense & Respond Software LLC',
     role: 'Software Engineer Intern',
     period: 'Sep 2023 - Dec 2023',
+    location: 'Noida, India',
     points: [
-      'Built reusable frontend components using React.js, TypeScript, JavaScript, Redux, and Material UI while learning scalable architecture.',
-      'Explored backend fundamentals including API handling, data flow, and frontend-backend integration.',
+      'Built reusable UI components using React.js, TypeScript, JavaScript, Redux, and Material UI, contributing to a scalable and consistent frontend architecture.',
+      'Gained practical exposure to backend fundamentals including API handling, data flow, and frontend-backend integration, strengthening full-stack development capability.',
     ],
   },
 ];
 
 export const projects: Project[] = [
   {
+    title: 'AI Agent with RAG',
+    category: 'ai',
+    summary:
+      'Intelligent AI agent built with LangChain that draws on multiple data sources and tools to deliver context-aware, accurate responses.',
+    stack: [
+      'Python',
+      'LangChain',
+      'RAG',
+      'FAISS',
+      'ChatOllama',
+      'Llama 3.1',
+      'Wikipedia API',
+      'Arxiv API',
+    ],
+    highlights: [
+      'Built a RAG pipeline that loads web-based documents, splits text into chunks, generates embeddings, and stores them in a FAISS vector database for efficient semantic retrieval.',
+      'Integrated external knowledge sources including the Wikipedia and arXiv APIs to broaden topical coverage.',
+      'Created a custom retriever tool and enabled dynamic tool selection through a tool-calling agent architecture, with ChatOllama (Llama 3.1) as the core LLM.',
+      'Implemented an Agent Executor to process user queries and fetch relevant information from multiple sources in real time.',
+    ],
+    href: 'https://github.com/imrkt45/AI_agent',
+  },
+  {
     title: 'Review Portal',
     category: 'fullstack',
     summary:
-      'Full-stack review platform with separate user and admin portals, AI-powered review generation, screenshot proof uploads, and moderation workflows.',
+      'Full-stack review management platform with separate user and admin portals, AI-powered review generation, screenshot proof uploads, and moderation workflows.',
     stack: [
       'React.js',
       'TypeScript',
       'Material UI',
       'Redux',
       'Node.js',
-      'Express.js',
-      'MongoDB',
-      'OpenAI API',
-      'Local Storage',
+      'OpenAI',
+      'Screenshot Uploads',
     ],
     highlights: [
-      'Developed and deployed a full-stack application, owning both frontend and backend responsibilities.',
-      'Built a user portal where users generate reviews with OpenAI, submit them, and upload screenshots as proof of submission.',
-      'Built an admin dashboard to review uploaded screenshots and approve or reject submissions.',
-      'Delivered the full workflow with React.js, TypeScript, Material UI, Redux, Local Storage, and OpenAI API integration.',
+      'Designed, developed, and deployed a full-stack review management platform consisting of a user portal and an admin portal, covering both frontend and backend implementation.',
+      'User Portal: built with React.js, TypeScript, Material UI, and Redux, letting users generate reviews with OpenAI, submit them, and upload screenshots as proof of submission.',
+      'Admin Portal: built an administrative dashboard to moderate submissions, verify uploaded screenshots, and approve or reject reviews.',
     ],
   },
   {
-    title: 'Product Inventory System',
+    title: 'Product Inventory Management System',
     category: 'fullstack',
     summary:
       'Full-stack inventory platform with a FastAPI + PostgreSQL backend and a React frontend for product, customer, and order management with real-time CRUD.',
     stack: [
-      'React.js',
       'FastAPI',
       'PostgreSQL',
       'SQLAlchemy',
       'Pydantic',
-      'Docker',
+      'React.js',
       'Axios',
-      'REST APIs',
+      'Docker',
     ],
     highlights: [
-      'Developed RESTful APIs with FastAPI for product, customer, and order management.',
-      'Designed relational data models and managed operations using SQLAlchemy ORM and PostgreSQL.',
-      'Implemented Pydantic validation, inventory tracking, stock validation, and automated order-processing workflows.',
-      'Containerized backend services with Docker and added transaction management and error handling.',
-      'Built a responsive React frontend integrated via Axios for real-time CRUD across inventory, customer, and order modules.',
+      'Developed RESTful APIs with FastAPI for product, customer, and order management, backed by relational data models using SQLAlchemy ORM and PostgreSQL.',
+      'Implemented Pydantic validation, inventory tracking, stock validation, and automated order-processing workflows with transaction management and structured error handling.',
+      'Containerized backend services with Docker for consistent, reproducible deployments across environments.',
+      'Built a responsive React.js frontend integrated with backend APIs via Axios, delivering real-time CRUD operations through reusable form and table components.',
     ],
   },
   {
-    title: 'Trading View Project',
+    title: 'Trading View Platform',
     category: 'frontend',
     summary:
-      'Modern trading platform frontend built with Next.js, focused on performance, dynamic UI components, and real-time data visualization.',
-    stack: ['Next.js', 'React', 'TypeScript', 'Material UI', 'Charts'],
+      'Modern trading platform built with Next.js, focused on a high-performance, scalable frontend and real-time data visualization.',
+    stack: ['Next.js', 'TypeScript', 'React', 'Material UI', 'Charts'],
     highlights: [
-      'Designed scalable, high-performance UI components for data-heavy trading workflows.',
-      'Implemented dynamic UI and real-time data visualization for a seamless user experience.',
-      'Planned backend API expansion for richer market interactions.',
+      'Developing a modern trading platform in Next.js with a high-performance, scalable frontend focused on a seamless user experience.',
+      'Implementing dynamic UI components and real-time data visualization, with planned extension into backend services and APIs.',
     ],
     href: 'https://github.com/imrkt45/trading-view',
   },
   {
-    title: 'AI Agent with RAG',
-    category: 'ai',
-    summary:
-      'Context-aware AI agent built with LangChain that leverages multiple data sources and tools to deliver accurate, grounded responses.',
-    stack: [
-      'Python',
-      'LangChain',
-      'RAG',
-      'ChatOllama',
-      'Llama 3.1',
-      'FAISS',
-      'Wikipedia API',
-      'Arxiv API',
-    ],
-    highlights: [
-      'Built a RAG pipeline by loading web documents, splitting text, generating embeddings, and storing them in a FAISS vector database for efficient retrieval.',
-      'Integrated Wikipedia and Arxiv APIs to expand knowledge coverage.',
-      'Created a custom retriever tool with dynamic tool selection using a tool-calling agent architecture.',
-      'Used ChatOllama (Llama 3.1) as the core LLM and an Agent Executor to process queries across sources in real time.',
-    ],
-    href: 'https://github.com/imrkt45/AI_agent',
-  },
-  {
-    title: 'CheckIn Project',
+    title: 'CheckIn Mobile Application',
     category: 'mobile',
     summary:
-      'Cross-platform mobile application for efficient check-in and check-out management with offline support.',
+      'Cross-platform mobile application for check-in and check-out management with a lightweight local database and offline support.',
     stack: ['Flutter', 'Dart', 'Local JSON Storage'],
     highlights: [
-      'Built a cross-platform app with Flutter and Dart for streamlined check-in / check-out flows.',
-      'Implemented a lightweight local JSON database for data handling and offline support.',
+      'Developed a cross-platform mobile application for check-in and check-out management.',
+      'Used a lightweight local JSON-based database for data handling and offline support.',
     ],
     href: 'https://github.com/imrkt45/checkin-project',
   },
 ];
 
 export const education = {
-  degree: 'B.Tech in Computer Science and Engineering (AI/ML)',
-  school: 'Galgotias University, Greater Noida, Uttar Pradesh',
+  degree: 'B.Tech in Computer Science and Engineering (AI & ML)',
+  school: 'Galgotias University, Greater Noida, Uttar Pradesh, India',
   period: '2020 - 2024',
 };

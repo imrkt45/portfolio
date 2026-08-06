@@ -50,6 +50,12 @@ import { selectProject, setProjectFilter, toggleMode } from './store/uiSlice';
 
 const filters: ProjectCategory[] = ['all', 'frontend', 'fullstack', 'ai', 'mobile'];
 const capabilityIcons = [Code, Storage, Psychology];
+const navLinks = [
+  { label: 'Skills', href: '#skills' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Contact', href: '#contact' },
+];
 
 function App() {
   const dispatch = useAppDispatch();
@@ -72,6 +78,13 @@ function App() {
                 <Typography variant="subtitle1" fontWeight={700}>
                   Raj.dev
                 </Typography>
+              </Stack>
+              <Stack direction="row" alignItems="center" gap={2.5} className="nav-links">
+                {navLinks.map((item) => (
+                  <Link key={item.href} href={item.href} color="inherit" underline="none" className="nav-link">
+                    {item.label}
+                  </Link>
+                ))}
               </Stack>
               <Stack direction="row" alignItems="center" gap={0.5}>
                 <Tooltip title={mode === 'dark' ? 'Light mode' : 'Dark mode'}>
@@ -183,7 +196,7 @@ function App() {
               </Box>
             </Box>
 
-            <Box className="section">
+            <Box className="section" id="experience">
               <Typography variant="h2" gutterBottom>
                 Experience
               </Typography>
@@ -196,6 +209,9 @@ function App() {
                           <Typography variant="h5">{item.role}</Typography>
                           <Typography color="primary" fontWeight={650}>
                             {item.company}
+                          </Typography>
+                          <Typography color="text.secondary" variant="body2">
+                            <LocationOn fontSize="inherit" /> {item.location}
                           </Typography>
                         </Box>
                         <Chip label={item.period} />
@@ -278,7 +294,7 @@ function App() {
               </Box>
             </Box>
 
-            <Box className="section split-section">
+            <Box className="section split-section" id="contact">
               <Card variant="outlined">
                 <CardContent>
                   <Typography variant="h2" gutterBottom>

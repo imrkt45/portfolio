@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 88px;
 }
 
 body {
@@ -35,6 +36,46 @@ a {
 .page-shell.light .topbar {
   background: rgba(247, 250, 249, 0.9);
   border-bottom-color: rgba(16, 32, 31, 0.12);
+}
+
+.nav-links {
+  margin-left: auto;
+  margin-right: 8px;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  font-weight: 600;
+  opacity: 0.78;
+  position: relative;
+  transition: opacity 140ms ease, color 140ms ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  background: #14b8a6;
+  transition: width 160ms ease;
+}
+
+.nav-link:hover {
+  opacity: 1;
+  color: #14b8a6;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
 }
 
 .hero {
