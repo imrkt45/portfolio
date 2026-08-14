@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raj Kumar Tiwari Resume</title>
+    <style>
+        :root {
+            --bg: #f6f8fb;
+            --surface: #ffffff;
+            --text: #111827;
+            --muted: #4b5563;
+            --line: #d1d5db;
+            --accent: #1f4ed8;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+            color: var(--text);
+            line-height: 1.5;
+        }
+
+        .page {
+            max-width: 960px;
+            margin: 32px auto;
+            padding: 28px;
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+            letter-spacing: 0.02em;
+        }
+
+        .subtitle {
+            margin: 6px 0 12px;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .contact {
+            margin: 0;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        section {
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 1rem;
+            margin: 0 0 8px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid var(--line);
+            letter-spacing: 0.06em;
+        }
+
+        p {
+            margin: 0 0 8px;
+        }
+
+        ul {
+            margin: 6px 0 0 18px;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .role-header {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+
+        .role-title {
+            font-weight: 700;
+        }
+
+        .period {
+            color: var(--muted);
+            font-size: 0.92rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 6px;
+        }
+
+        .label {
+            font-weight: 700;
+        }
+
+        @media (min-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr 1fr;
+                column-gap: 16px;
+            }
+        }
+
+        @media print {
+            body {
+                background: #fff;
+            }
+
+            .page {
+                margin: 0;
+                max-width: none;
+                border: none;
+                border-radius: 0;
+                box-shadow: none;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="page">
+        <header>
+            <h1>RAJ KUMAR TIWARI</h1>
+            <p class="subtitle">Full Stack Developer | AI &amp; LLM Integration</p>
+            <p class="contact">
+                Noida, Uttar Pradesh 201301, India | +91-8178223608 |
+                info.rajtiwari45@gmail.com
+            </p>
+            <p class="contact">GitHub | LinkedIn | LeetCode</p>
+        </header>
+
+        <section>
+            <h2>PROFESSIONAL SUMMARY</h2>
+            <p>
+                Full Stack Developer with 2.5+ years of experience designing and
+                shipping responsive, high-performance web applications using React.js,
+                Next.js, JavaScript, TypeScript, Redux, and Material UI, backed by
+                Node.js, Express.js, and MongoDB. Proven record of turning complex
+                requirements into scalable architecture and measurable gains in
+                performance, with intermediate expertise in Data Structures &amp;
+                Algorithms and C++, and strong proficiency in data persistence with
+                MongoDB. Hands-on with Python, FastAPI, WebSockets, Redis, Docker,
+                and Kafka, and experienced in delivering production AI features
+                through Retrieval-Augmented Generation (RAG), LangChain, and OpenAI
+                integration. Seeking to apply full stack and applied-AI engineering
+                skills to build reliable, user-focused products at scale.
+            </p>
+        </section>
+
+        <section>
+            <h2>TECHNICAL SKILLS</h2>
+            <div class="skills-grid">
+                <p><span class="label">Frontend:</span> React.js, Next.js, JavaScript (ES6+), TypeScript, Redux,
+                    Material UI, HTML5, CSS3, Responsive UI</p>
+                <p><span class="label">Backend:</span> Node.js, Express.js, Python, FastAPI, REST APIs, WebSockets,
+                    Kafka</p>
+                <p><span class="label">Databases:</span> MongoDB, Redis</p>
+                <p><span class="label">AI &amp; LLM:</span> Retrieval-Augmented Generation (RAG), LangChain, OpenAI
+                    APIs, FAISS Vector Database</p>
+                <p><span class="label">Cloud &amp; DevOps:</span> Docker, Git</p>
+                <p><span class="label">Core Competencies:</span> Data Structures &amp; Algorithms, C++, Object-Oriented
+                    Programming, System Design Fundamentals, Agile / Scrum</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>PROFESSIONAL EXPERIENCE</h2>
+            <article>
+                <div class="role-header">
+                    <span class="role-title">Software Engineer - Sense &amp; Respond Software LLC</span>
+                    <span class="period">Jan 2024 - Apr 2026</span>
+                </div>
+                <p class="period">Noida, India</p>
+                <ul>
+                    <li>Built responsive, high-performance user interfaces with React.js, Redux, TypeScript, JavaScript,
+                        and Material UI, prioritizing scalability, accessibility, and a consistent user experience
+                        across modules.</li>
+                    <li>Integrated REST APIs with Redux for centralized state management, streamlining data flow across
+                        the application and reducing redundant network calls.</li>
+                    <li>Implemented Web Workers to offload computationally intensive tasks, improving UI responsiveness
+                        and reducing page load time by approximately 30% by preventing main-thread blocking.</li>
+                    <li>Introduced Redis caching for frequently accessed data, cutting database queries and improving
+                        API response time by approximately 40% while improving overall application scalability.</li>
+                    <li>Built a Retrieval-Augmented Generation (RAG) pipeline with LangChain and OpenAI that grounded
+                        model responses in retrieved contextual documents, reducing AI hallucinations by approximately
+                        50%.</li>
+                    <li>Developed and integrated OpenAI-powered LLM APIs into full stack applications, enabling
+                        intelligent features such as real-time responses and enhanced user interaction.</li>
+                    <li>Developed server-side logic and REST APIs using Node.js and Express.js with MongoDB integration,
+                        supporting end-to-end feature delivery from database to interface.</li>
+                    <li>Collaborated with product managers, designers, and backend engineers in an Agile environment;
+                        participated in code reviews and improved maintainability through reusable, component-based
+                        architecture.</li>
+                </ul>
+            </article>
+
+            <article>
+                <div class="role-header">
+                    <span class="role-title">Software Engineer Intern - Sense &amp; Respond Software LLC</span>
+                    <span class="period">Sep 2023 - Dec 2023</span>
+                </div>
+                <p class="period">Noida, India</p>
+                <ul>
+                    <li>Built reusable UI components using React.js, TypeScript, JavaScript, Redux, and Material UI,
+                        contributing to a scalable and consistent frontend architecture.</li>
+                    <li>Gained practical exposure to backend fundamentals including API handling, data flow, and
+                        frontend-backend integration, strengthening full stack development capability.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2>PROJECTS</h2>
+            <article>
+                <div class="role-header">
+                    <span class="role-title">AI Agent with Retrieval-Augmented Generation (RAG)</span>
+                    <span class="period">LangChain, FAISS, Llama 3.1</span>
+                </div>
+                <ul>
+                    <li>Developed an intelligent AI agent with LangChain that draws on multiple data sources and tools
+                        to deliver context-aware, accurate responses.</li>
+                    <li>Built a RAG pipeline that loads web-based documents, splits text into chunks, generates
+                        embeddings, and stores them in a FAISS vector database for efficient semantic retrieval.</li>
+                    <li>Integrated external knowledge sources including the Wikipedia and arXiv APIs to broaden topical
+                        coverage.</li>
+                    <li>Created a custom retriever tool and enabled dynamic tool selection through a tool-calling agent
+                        architecture, with ChatOllama (Llama 3.1) as the core LLM.</li>
+                    <li>Implemented an Agent Executor to process user queries and fetch relevant information from
+                        multiple sources in real time.</li>
+                </ul>
+            </article>
+
+            <article>
+                <div class="role-header">
+                    <span class="role-title">Review Portal</span>
+                    <span class="period">React.js, TypeScript, Node.js, OpenAI</span>
+                </div>
+                <ul>
+                    <li>Designed, developed, and deployed a full stack review management platform consisting of a user
+                        portal and an admin portal, including both frontend and backend implementation.</li>
+                    <li>User Portal: Built with React.js, TypeScript, Material UI, and Redux, allowing users to generate
+                        reviews with OpenAI, submit them, and upload screenshots as proof of submission.</li>
+                    <li>Admin Portal: Built an administrative dashboard to moderate submissions, verify uploaded
+                        screenshots, and approve or reject reviews.</li>
+                </ul>
+            </article>
+
+            <article>
+                <div class="role-header">
+                    <span class="role-title">Product Inventory Management System</span>
+                    <span class="period">FastAPI, PostgreSQL, React.js, Docker</span>
+                </div>
+                <ul>
+                    <li>Developed RESTful APIs with FastAPI for product, customer, and order management, backed by
+                        relational data models using SQLAlchemy ORM and PostgreSQL.</li>
+                    <li>Implemented Pydantic validation, inventory tracking, stock validation, and automated order
+                        processing workflows with transaction management and structured error handling.</li>
+                    <li>Containerized backend services with Docker for consistent, reproducible deployments across
+                        environments.</li>
+                    <li>Built a responsive React.js frontend integrated with backend APIs via Axios, delivering
+                        real-time CRUD operations through reusable form and table components.</li>
+                </ul>
+            </article>
+
+            <article>
+                <div class="role-header">
+                    <span class="role-title">Trading View Platform</span>
+                    <span class="period">Next.js, TypeScript</span>
+                </div>
+                <ul>
+                    <li>Developing a modern trading platform in Next.js with a high-performance, scalable frontend
+                        focused on a seamless user experience.</li>
+                    <li>Implementing dynamic UI components and real-time data visualization, with planned extension into
+                        backend services and APIs.</li>
+                </ul>
+            </article>
+
+            <article>
+                <div class="role-header">
+                    <span class="role-title">CheckIn Mobile Application</span>
+                    <span class="period">Flutter, Dart</span>
+                </div>
+                <ul>
+                    <li>Developed a cross-platform mobile application for check-in and check-out management, using a
+                        lightweight local JSON-based database for data handling and offline support.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2>EDUCATION</h2>
+            <p><strong>B.Tech in Computer Science and Engineering (AI &amp; ML)</strong> - 2020 - 2024</p>
+            <p>Galgotias University, Greater Noida, Uttar Pradesh, India</p>
+        </section>
+    </main>
+</body>
+
+</html>
